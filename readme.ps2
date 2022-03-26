@@ -1,0 +1,48 @@
+#--------------------------------------------------------------------
+# PANG/PS2 
+# Release version: (12 Jan 2006)
+#
+# Copyright (C) 2005 michel louvet
+# http://michel.louvet.club.fr/index.html
+#
+# Playstation 2 version by 
+# Olivier "evilo" Biot <evilo13@gmail.com>
+# &
+# The Froggies <http://psxdev.org>
+#-------------------------------------------------------------------- 
+
+
+History
+-------
+
+01-12 : Fixed Protection Bonus
+	Fixed blocking balls (from version 1.20)
+
+01-09 : first version
+	based on original 1.0 version
+	
+
+Compiling:
+----------
+
+To get your sources compiled, checkout the latest PS2SDK source tree. 
+You will need SDL, SDL_mixer, SDL_image. 
+All of these are available at www.ps2dev.org 
+
+
+Enhancements/Modifications :
+----------------------------
+
+- Added Joypad support through SDL
+- cleaned-up/remade sound code (SDL Mixer)
+- Added several flags (all used for the PS2) 
+ * ENABLE_JOYSTICK : added Joypad support through SDL (original use keyboard only)
+ * EMBEDDED_FILES  : .wav & .bmp are embedded into the executable ELF
+ * USE_VSYNC	   : orginal version use SDL_Delay()
+
+Credits:
+--------
+michel louvet for sharing it's source code.
+gawd for the SDL library port on the ps2.
+
+-- evilo 20060112
